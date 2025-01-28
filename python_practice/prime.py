@@ -40,10 +40,26 @@ def display_prime2(lower, upper):
     if flag:
         print("There are no prime numbers in that range.")
 
+def prime_list(lower, upper):
+    l = []
+    for i in range(lower, upper+1):
+        if is_prime(i):
+            l.append(i)
+    return l
+
+
 def main():
     # n = int(input("Enter number: "))
     # print("Prime") if is_prime(n) else print("Not prime")
+
+    # lower, upper = get_limits()
+    # display_prime2(lower, upper)
+
     lower, upper = get_limits()
-    display_prime2(lower, upper)
+    l = prime_list(lower, upper)
+    print("THe prime numbers in that range are:", l)
+    print(f"The lowest prime number in the range is {l[0]}\nThe highest prime number in the range is {l[-1]}")
+
 
 main()
+
