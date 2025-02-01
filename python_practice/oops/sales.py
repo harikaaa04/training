@@ -3,7 +3,7 @@ class Customers:
         self.name = name
         self.orders = orders
 
-class Orders():
+class Orders:
     def __init__(self, order_id, description):
         self.order_id = order_id
         self.description = description
