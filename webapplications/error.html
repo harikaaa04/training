@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffcccc;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: red;
+        }
+        .message {
+            font-size: 18px;
+            color: #660000;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: green;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+        .button:hover {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Error</h1>
+    <p class="message">Oops! Something went wrong. Please try again later.</p>
+
+    <button class="button" onclick="window.location.href='index.html'">Go Back to Results</button>
+
+</body>
+</html>
